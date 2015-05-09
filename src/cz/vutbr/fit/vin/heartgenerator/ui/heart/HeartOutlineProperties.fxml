@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cz.vutbr.fit.vin.heartgenerator.ui.heart.HeartOutlinePropertiesController">
+   <children>
+      <GridPane id="propertiesGridPane" hgap="7.0" stylesheets="@../HearGeneratorStyle.css">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="Color" />
+            <Label text="Width" GridPane.rowIndex="1" />
+            <Label text="Line join" GridPane.rowIndex="2" />
+            <ColorPicker fx:id="outlineColor" GridPane.columnIndex="1" />
+            <Slider fx:id="outlineWidht" blockIncrement="1.0" max="125.0" minorTickCount="5" showTickLabels="true" value="6.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ComboBox fx:id="outlineLineJoin" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+   </children>
+</VBox>

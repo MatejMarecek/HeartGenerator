@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane id="propertiesGridPane" hgap="7.0" stylesheets="@../HearGeneratorStyle.css">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="Color" />
+            <ColorPicker fx:id="heartColorPicker" GridPane.columnIndex="1" />
+            <Label text="Size X" GridPane.rowIndex="1" />
+            <Spinner fx:id="heartSizeXSpinner" editable="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Size Y" GridPane.rowIndex="2" />
+            <Spinner fx:id="heartSizeYSpinner" editable="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Precision" GridPane.rowIndex="3" />
+            <Spinner fx:id="heartPrecisionSpinner" editable="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="Position X" GridPane.rowIndex="4" />
+            <Slider fx:id="heartPositionXSlider" blockIncrement="1.0" majorTickUnit="50.0" min="-100.0" showTickLabels="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Slider>
+            <Label text="Position Y" GridPane.rowIndex="5" />
+            <Slider fx:id="heartPositionYSlider" blockIncrement="1.0" majorTickUnit="50.0" min="-100.0" showTickLabels="true" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Slider>
+            
+         </children>
+      </GridPane>
+   </children>
+</VBox>

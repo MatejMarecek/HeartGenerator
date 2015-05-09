@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="5.0" stylesheets="@../HearGeneratorStyle.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cz.vutbr.fit.vin.heartgenerator.ui.heart.HeartShapePropertiesController">
+   <children>
+      <Label text="Predefined equations:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="listOfEquations" promptText="Select predefined heart shape" />
+      <HBox alignment="CENTER_LEFT">
+         <children>
+            <Label text="Parameter t:" />
+            <TextField fx:id="maxParamSize" promptText="Parameter &quot;t&quot; is counter form 0 to value specified here" text="2*PI">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <Label text="Parametric equation for X:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="equationX" promptText="Write your parametric equation for X dimension" wrapText="true" />
+      <Label text="Parametric equation for Y:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="equationY" promptText="Write your parametric equation for Y dimension" wrapText="true" />
+   </children>
+</VBox>
